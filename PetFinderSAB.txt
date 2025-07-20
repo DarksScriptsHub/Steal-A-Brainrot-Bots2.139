@@ -83,7 +83,10 @@ if #encontrados > 0 then
 
         local data = {
             ["username"] = "Brainrot Detector",
-            ["content"] = "@everyone\n🧠 Brainrot detected in the server!",
+            ["content"] = "<@&1396509177479958683> 🧠 Brainrot detected in the server!",
+            ["allowed_mentions"] = {
+                ["roles"] = { "1396509177479958683" }
+            },
             ["embeds"] = {{
                 ["title"] = "Brainrot Detected",
                 ["description"] = table.concat(encontrados, "\n"),
